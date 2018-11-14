@@ -33,7 +33,7 @@ a {
     margin-right: auto;
 }
 
-#box {
+.box {
     height: 75px;
     float: left;
     width: 350px;
@@ -47,13 +47,13 @@ h1 {
     color: #ffffff;
 }
 
-#index {
+.index {
     position: absolute;
     top: 25px;
     right: 200px;
 }
 
-#portfolio {
+.portfolio {
     position: absolute;
     top: 25px;
     right: 75px;
@@ -63,7 +63,7 @@ h1 {
     border-left: solid 1px #dddddd;
 }
 
-#contact {
+.contact {
     position: absolute;
     top: 25px;
     right: 0;
@@ -86,11 +86,11 @@ section::after {
     clear: both;
 }
 
-#main {
+.main {
     margin: 15px;
 }
 
-#h2 {
+.h2 {
     height: 75px;
 }
 
@@ -110,6 +110,8 @@ hr {
     float: left;
     margin-right: 10px;
     margin-bottom: 15px;
+    height: 200px;
+    width: 200px;
 }
 
 form {
@@ -123,13 +125,13 @@ input {
     border: #dddddd 1px solid;
 }
 
-#text {
+textarea {
     height: 200px;
     width: 930px;
     border: #dddddd 1px solid;
 }
 
-#button {
+.button {
     background-color: #4aaaa5;
     color: #ffffff;
     text-align: center;
@@ -137,14 +139,14 @@ input {
     width: 100px;
 }
 
-#hangman {
+.portimg {
     position: relative;
     height: 300px;
     width: 300px;
     margin: 7px;
 }
 
-#port1 {
+.portbar {
     position: relative;
     background-color: #4aaaa5;
     height: 50px;
@@ -155,88 +157,11 @@ input {
     color: #ffffff;
     margin: 7px;
 }
-
-#dice {
-    position: relative;
-    height: 300px;
-    width: 300px;
-    margin: 8px;
-}
-
-#port2 {
-    position: relative;
-    background-color: #4aaaa5;
-    height: 50px;
-    width: 300px;
-    bottom: 100px;
-    line-height: 3;
-    text-align: center;
-    color: #ffffff;
-    margin: 8px;
-}
-
-#trivia {
-    position: relative;
-    height: 300px;
-    width: 300px;
-    margin: 7px;
-}
-
-#port3 {
-    position: relative;
-    background-color: #4aaaa5;
-    height: 50px;
-    width: 300px;
-    bottom: 100px;
-    line-height: 3;
-    text-align: center;
-    color: #ffffff;
-    margin: 7px;
-}
-
-#widget {
-    position: relative;
-    height: 300px;
-    width: 300px;
-    margin: 8px;
-}
-
-#port4 {
-    position: relative;
-    background-color: #4aaaa5;
-    height: 50px;
-    width: 300px;
-    bottom: 100px;
-    line-height: 3;
-    text-align: center;
-    color: #ffffff;
-    margin: 8px;
-}
-
-#rps {
-    position: relative;
-    height: 300px;
-    width: 300px;
-    margin: 7px;
-}
-
-#port5 {
-    position: relative;
-    background-color: #4aaaa5;
-    height: 50px;
-    width: 300px;
-    bottom: 100px;
-    line-height: 3;
-    text-align: center;
-    color: #ffffff;
-    margin: 7px;
-}
-
-.bar {
+.block {
     float: left;
 }
 
-#footer {
+.footer {
     background-color: #666666;
     position: fixed;
     width: 100%;
@@ -252,4 +177,122 @@ input {
     font-size: 8px;
     color: white;
     top: 25px;
+}
+
+@media screen and (max-width: 980px){
+    .navbar {
+        width: 768px;
+    }
+
+    section {
+        width: 768px;
+    }
+
+    input {
+        width: 738px;
+    }
+    
+    textarea {
+        width: 738px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar {
+        width: 640px;
+    }
+
+    section {
+        width: 640px;
+    }
+
+    input {
+        width: 610px;
+    }
+    
+    textarea {
+        width: 610px;
+    }
+
+@media screen and (max-width: 640px){
+
+    .header {
+        position: absolute;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .linkbar {
+        width: 100%;
+        position: relative;
+        height: 50px;
+        top: 75px;
+        border: #cccccc;
+        background-color: #ffffff;
+    }
+
+    #photo {
+        float: left;
+        height: 570px;
+        width: 570px;
+    }
+    
+    .links {
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 0.4;
+        width: 50%;
+        height: 50px;
+        position: relative;
+        }
+
+    .index {
+        left: 0px;
+    }
+    
+    .portfolio {
+        width: 35%;
+        right: 100px;
+        }
+    
+    .contact {
+        right: 0px;
+    }
+    
+    section {
+        width: 600px;
+        top: 115px;
+    }
+
+    input {
+        width: 570px;
+    }
+    
+    textarea {
+        width: 570px;
+    }
+
+    .block {
+        width: 570px;
+    }
+
+    .portimg {
+        width: 570px;
+        height: 570px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .portbar {
+        width: 570px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
